@@ -5,6 +5,9 @@ x = 5
 y = 7
 sum = (x+y)
 print(type(sum))
+print(7 > 3)
+print(10 < 0)
+print(10 != 10)  # ('!=' not equal to)
 
 # input = taking data from user
 num1 = int(input("Enter a number: "))
@@ -14,11 +17,11 @@ sum = num1+num2
 print("The sum is: ", sum)
 
 # lists and tuple - collection of elements in single variable
-Characters = {"Spiderman", "Iron man", "Captain America",
-              "Thor", "Hulk", "Superman", "Superwoman"}  # list
+Characters = ["Spiderman", "Iron man", "Captain America",
+              "Thor", "Hulk", "Superman", "Superwoman"]  # list
 print(Characters)
-Character = ["Spiderman", "Iron man", "Captain America",
-             "Thor", "Hulk", "Superman", "Superwoman"]  # tuple
+Character = ("Spiderman", "Iron man", "Captain America",
+             "Thor", "Hulk", "Superman", "Superwoman")  # tuple
 print(Character[0])
 print(Character[1])
 print(Character[2])
