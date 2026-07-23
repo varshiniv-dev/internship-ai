@@ -6,7 +6,7 @@ dept = ("CSE")
 name = "CSE"
 print(name)  # prints CSE not Varsh becz of variable reassignment
 
-# Boolean Operators- AND, OR
+# logical Operators- AND, OR
 x = 4
 y = 6
 z = 10
