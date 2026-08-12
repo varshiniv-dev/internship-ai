@@ -207,6 +207,20 @@ print("Count of 'o':", text.count("o"))  # Count occurrences
 print("Find 'World':", text.find("World"))  # Find substring
 print("Replace 'World' with 'Python':", text.replace(
     "World", "Python"))  # Replace substring
+
+# sets
+numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+numbers.add(10)
+numbers.remove(5)
+print(numbers)
+
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
+print(a.union(b))
+print(a.intersection(b))
+print(a.difference(b))
+
+
 # practise questions- 1. Add two numbers
 # 2. Find largest of two numbers
 # 3. Find largest of three numbers
