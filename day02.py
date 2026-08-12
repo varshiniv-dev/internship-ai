@@ -22,19 +22,18 @@ Characters = ["Spiderman", "Iron man", "Captain America",
 print(Characters)
 Character = ("Spiderman", "Iron man", "Captain America",
              "Thor", "Hulk", "Superman", "Superwoman")  # tuple
-print(Character[0])
-print(Character[1])
-print(Character[2])
-print(Character[3])
-print(Character[4])
-print(Character[5])
-print(Character[6])
+print(Characters[0])
+print(Characters[1])
+print(Characters[2])
+print(Characters[3])
+print(Characters[4])
+print(Characters[5])
+print(Characters[6])
 # print(Character[7]) #throws error because list is out of range and list only contains 0-6.
 
-Character[0] = "Spider-man"
 print(Character[0])
 
-# tuples can be changed but list cannot be changed.
+# tuples ar3e immutable but list are mutable.
 
 # slicing
 print(Character[0:4])
