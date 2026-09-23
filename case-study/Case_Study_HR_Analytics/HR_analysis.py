@@ -13,7 +13,8 @@ import seaborn as sns
 
 # STEP 2: Load the dataset
 
-df = pd.read_csv("employee_performance_dataset.csv")
+df = pd.read_csv(
+    r"C:\Users\Asus\Desktop\GitHub\Internship-AI\case-study\Case_Study_HR_Analytics\employee_performance_dataset.csv")
 
 # Display first five rows
 df.head()
