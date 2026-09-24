@@ -1,0 +1,99 @@
+MACHINE LEARNING – ASSIGNMENT 1
+
+Name: Varshini V
+Course: Machine Learning
+Assignment: 1
+
+
+PART A – MULTIPLE CHOICE QUESTIONS
+
+1. Machine Learning is a subset of
+   Answer: Artificial Intelligence
+
+2. Which type of Machine Learning uses labelled data?
+   Answer: Supervised Learning
+
+3. Which of the following is a Regression problem?
+    Answer: House price Prediction
+
+4. Which of the following is a Classification problem?
+    Answer: Email spam Detection
+
+5. Which column is the target variable in advertising dataset?
+    Answer: Sales
+    
+
+PART B – FILL IN THE BLANKS
+
+1. Machine Learning is a subset of Artificial Intelligence.
+2. Regression predicts numerical values.
+3. Classification predicts categories.
+4. Input variables are called Features.
+5. Output variable is called the Target Variable.
+
+PART C – SHORT ANSWER QUESTIONS
+
+1. Define Artificial Intelligence.
+Answer: AI is a branch of computer science that enables computers to perform tasks that normally require human intelligence.
+example: chatgpt, siri etc
+
+2. What is Machine Learning?
+Answer: ML is a technique where computers learn patterns from data instead of being explicitly programmed.
+Basically we provide the data with answers for machine, it learns and make predictions.
+
+3. Explain difference between traditional programming and machine learning?
+Answer: Traditional programming- 1. Programmer write the program explicitly.
+2. input is given, rules or instructions are applied and the output is gennerated
+3. rules or instructions are manually created
+Machine learning- 1. machine learns the pattern from data given
+2. input data takes, correct answer observes, machine learns then predicts the data
+
+4. What is Supervised learning? give one real-world example.
+Answer: SL is a type of ML in which the dataset already contains the correct answers, also called labelled data.
+example: a models learns about TV AD spending and product sales using provided data where both AD spening and sales are known
+
+5. Difference between regression and classification with example
+Answer: Regression- predicts numerical values, output is in number, ex: temperature Prediction. classification- predicts categories, output is category or class, ex: healthy/sick
+
+6. What are the features and target variables in the advertising dataset?
+Answer: the advertising dataset contains four columns: tv, radio, newspaper, sales.
+features: tv,radio,newspaper
+target variable: sales
+
+7. Why do we perform train-test split?
+Answer: we perform train-test split to evaluate how well a machine learning model performs on unseen data. 
+training data- where machine is trained using the datasets
+testing data- where model predicts the data
+
+PART D – DATASET UNDERSTANDING
+
+1. Identify the input features.
+Answer:
+TV,Radio, newspaper
+
+2. Identify the target variable
+Answer: Sales
+
+3. Why should we not train the model using the complete dataset?
+Answer: because model might just use all data as exmple and learn it as it is and while opredicting it might predict wrong things.
+
+4. what is the purpose of testing dataset?
+answer: after trinaing we have to test the dataset as the model perform=s might differ and there might be predicts on unseen data as well
+
+BONUS QUESTION
+
+Machine Learning Workflow:
+
+Data
+ ↓
+Training
+ ↓
+Model
+ ↓
+Prediction
+
+Explanation: 
+data- collects the requirted data
+training- data is given to ML. model learns the relationship between input and output
+model- it contains the pattern and relationships it learned
+prediction- according to the data it learned, the model is going to predict output for new or unseen data.
