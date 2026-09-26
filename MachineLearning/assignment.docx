@@ -1,0 +1,44 @@
+Name: Varshini V
+
+R2 using Study hours: 0.6600435613904074
+
+R2 using Attendance:
+-6.252787795754744e-06
+
+Better predictor: Study hours
+
+Reason: Study hours has much higher r2 score compared to attendnace percetage. therefore study hour is better predictor of total cores in this model.
+
+Answers for the given question: 
+
+1. What equation did the model find?
+Ans: For Study Hours:
+Total Score = (1.816818 × Study Hours) + 56.971123
+For Attendance:
+Total Score = (-0.00164285 × Attendance Percentage) + 84.414647
+
+2. What is the new R² score?
+Ans: R² = -6.252787795754744e-06, approximately 0.00.
+
+3. Which is a better predictor of exam scores?
+Ans: Study Hours
+
+4. How do you know?
+Ans: Study Hours has a higher R² score (0.6600435613904074) than Attendance Percentage (-6.252787795754744e-06). Therefore, Study Hours explains much more of the variation in total scores in this model.
+
+Quick self-check quiz:
+
+1. What does the slope represent?
+Ans: The slope represents how much the target value changes when the feature increases by 1.
+
+2. Why do we split data into training and testing?
+Ans: To train the model using training data and evaluate it on unseen testing data.
+
+3. What does an R² score of 1 mean?
+Ans: It means the model explains all the variation in the target.
+
+4. What are X and y?
+Ans: X is the input feature and y is the target variable.
+
+5. What does .predict() do?
+Ans: It uses the trained model to make predictions for the test data.
