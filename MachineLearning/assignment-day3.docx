@@ -1,0 +1,15 @@
+Name: Varshini V
+
+Model 1 R²: 0.66004356
+
+Model 2 R²: 0.66004254
+
+Model 3 R²: 0.66004259
+
+Model 4 R²: Not applicable — no suitable additional independent feature was available.
+
+Best Model: Based on the R², MAE, and RMSE values obtained, Model 1 had the highest R² and slightly lower error values among the three tested models. However, the differences were extremely small.
+
+Most Important Feature: Weekly Self-Study Hours
+
+Reason: It had the largest coefficient in Model 3 among the three features.
