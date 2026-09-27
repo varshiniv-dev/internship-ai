@@ -13,3 +13,136 @@ Best Model: Based on the R², MAE, and RMSE values obtained, Model 1 had the hig
 Most Important Feature: Weekly Self-Study Hours
 
 Reason: It had the largest coefficient in Model 3 among the three features.
+
+#assignment of day3
+
+#model1
+X1 = df[["weekly_self_study_hours"]]
+Y1 = df["total_score"]
+
+#model2
+X2 = df[["weekly_self_study_hours","attendance_percentage"]]
+Y2 = df["total_score"]
+
+#model3
+X3 = df[["weekly_self_study_hours","attendance_percentage", "class_participation"]]
+Y3 = df["total_score"]
+
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
+X1_train, X1_test, Y1_train, Y1_test = train_test_split(X1, Y1, test_size=0.2, random_state=42)
+model1 = LinearRegression()
+model1.fit(X1_train, Y1_train)
+Y1_pred = model1.predict(X1_test)
+r2_1 = r2_score(Y1_test, Y1_pred)
+mae_1 = mean_absolute_error(Y1_test, Y1_pred)
+rmse_1 = mean_squared_error(Y1_test, Y1_pred) ** 0.5
+print("MODEL 1")
+print("Coefficient:", model1.coef_)
+print("Intercept:", model1.intercept_)
+print("R²:", r2_1)
+print("MAE:", mae_1)
+print("RMSE:", rmse_1)
+
+# output-
+# MODEL 1
+# Coefficient: [1.81681813]
+# Intercept: 56.97112317921372
+# R²: 0.6600435613904074
+# MAE: 7.161324064837911
+# RMSE: 8.996387974791649
+
+X2_train, X2_test, Y2_train, Y2_test = train_test_split(X2, Y2, test_size=0.2, random_state=42)
+model2 = LinearRegression()
+model2.fit(X2_train, Y2_train)
+Y2_pred = model2.predict(X2_test)
+r2_2 = r2_score(Y2_test, Y2_pred)
+mae_2 = mean_absolute_error(Y2_test, Y2_pred)
+rmse_2 = mean_squared_error(Y2_test, Y2_pred) ** 0.5
+print("MODEL 2")
+print("Coefficients:", model2.coef_)
+print("Intercept:", model2.intercept_)
+print("R²:", r2_2)
+print("MAE:", mae_2)
+print("RMSE:", rmse_2)
+
+#output
+# MODEL 2
+# Coefficients: [1.81681897e+00 4.01320689e-04]
+# Intercept: 56.93711092713043
+# R²: 0.6600425412563693
+# MAE: 7.161329689620425
+# RMSE: 8.996401472866207
+
+X3_train, X3_test, Y3_train, Y3_test = train_test_split(X3, Y3, test_size=0.2, random_state=42)
+model3 = LinearRegression()
+model3.fit(X3_train, Y3_train)
+Y3_pred = model3.predict(X3_test)
+r2_3 = r2_score(Y3_test, Y3_pred)
+mae_3 = mean_absolute_error(Y3_test, Y3_pred)
+rmse_3 = mean_squared_error(Y3_test, Y3_pred) ** 0.5
+print("MODEL 3")
+print("Coefficients:", model3.coef_)
+print("Intercept:", model3.intercept_)
+print("R²:", r2_3)
+print("MAE:", mae_3)
+print("RMSE:", rmse_3)
+
+#output
+# MODEL 3
+# Coefficients: [ 1.81682003e+00  4.01750743e-04 -2.75562094e-03]
+# Intercept: 56.95355744476303
+# R²: 0.6600425865640975
+# MAE: 7.161333476729997
+# RMSE: 8.996400873369833
+
+import pandas as pd
+comparison = pd.DataFrame({
+    "Model": ["Model 1", "Model 2", "Model 3"],
+    "R²": [r2_1, r2_2, r2_3],
+    "MAE": [mae_1, mae_2, mae_3],
+    "RMSE": [rmse_1, rmse_2, rmse_3],
+    "Equation": [
+        "Total Score = 1.81681813 × Study Hours + 56.97112318",
+        "Total Score = 1.81681897 × Study Hours + 0.00040132 × Attendance + 56.93711093",
+        "Total Score = 1.81682003 × Study Hours + 0.00040175 × Attendance − 0.00275562 × Participation + 56.95355744"
+    ]
+})
+comparison
+
+#output
+# Model	R²	MAE	RMSE	Equation
+# 0	Model 1	0.660044	7.161324	8.996388	Total Score = 1.81681813 × Study Hours + 56.97...
+# 1	Model 2	0.660043	7.161330	8.996401	Total Score = 1.81681897 × Study Hours + 0.000...
+# 2	Model 3	0.660043	7.161333	8.996401	Total Score = 1.81682003 × Study Hours + 0.000...
+
+
+Part B — Feature Investigation
+The dataset contains the following features: student_id, weekly_self_study_hours, attendance_percentage, class_participation, total_score, and grade.
+
+The three independent numerical features have already been used in Models 1–3. student_id is an identifier, while grade is a categorical label associated with total_score. Therefore, no additional independent numerical feature is available in the provided dataset for Model 4.
+
+
+Part 3- Analysis Question
+Which feature had the highest coefficient?Why is that important?
+Answer : Weekly self-study hours had the highest coefficient in Model 3. This indicates that, according to this model, a change in study hours has the largest coefficient effect on the predicted total score among the three features.
+Why did R² increase when more features were added?
+Answer: Adding relevant features can allow a multiple linear regression model to explain more variation in the target, which can increase R². However, in my dataset, adding attendance and class participation did not produce a meaningful increase in R², because the values remained approximately 0.66.
+Can adding too many features ever make a model worse? Explain.
+Answer: Yes, adding too many irrelevant features can make a model worse, especially if the model starts learning noise instead of useful patterns. It can also make the model more complex and may lead to overfitting, where the model performs well on training data but poorly on unseen data.
+Which metric would you trust more for student score prediction: MAE or RMSE? Why?
+Answer:I would use MAE as the main metric for student score prediction because it is easy to interpret as the average number of marks by which predictions are wrong. RMSE can also be useful when larger prediction errors should be given more importance.
+
+import matplotlib.pyplot as plt
+models = ["Model 1", "Model 2", "Model 3"]
+r2_scores = [r2_1, r2_2, r2_3]
+plt.figure(figsize=(8, 5))
+plt.bar(models, r2_scores)
+plt.title("R² Score Comparison")
+plt.xlabel("Models")
+plt.ylabel("R² Score")
+plt.ylim(0, 1)
+plt.show()
+
+(this realted colab notbook is named after "student_performance.ipynb" file)
