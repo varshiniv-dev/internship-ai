@@ -365,7 +365,7 @@ Interested in **Python, Data Science, Machine Learning, AI and Software Developm
 * GitHub: [varshiniv-dev](https://github.com/varshiniv-dev)
 * LinkedIn: [Varshini V](https://www.linkedin.com/in/varshini-v-cs)
 * Portfolio: [varshiniv-dev Portfolio](https://varshiniv-dev.github.io/portfolio/)
-
+* Medium: [varshiniv.dev](https://medium.com/@varshiniv.dev)
 ---
 
 ⭐ If you find this repository useful, feel free to explore the notebooks and case studies!
