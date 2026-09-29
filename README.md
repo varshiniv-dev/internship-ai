@@ -1,6 +1,6 @@
-# 🤖 AI & Machine Learning Internship — Learning Repository
+# 🤖 Artificial Intelligence Internship — Learning Repository
 
-Welcome to my **AI & Machine Learning Internship Repository**! 🚀
+Welcome to my **Artificial Intelligence Internship Repository**! 🚀
 
 This repository contains my hands-on learning journey through **Python, Data Analysis, Machine Learning, and real-world data case studies**. It includes daily practice programs, assignments, study materials, Jupyter notebooks, datasets, case studies, and internship projects.
 
@@ -11,7 +11,7 @@ The goal of this repository is to document my progress from Python fundamentals 
 ## 📌 Repository Overview
 
 ```text
-AI-ML Internship
+AI Internship
 │
 ├── 🐍 Module 1 — Python Programming
 │   ├── Daily Python practice
