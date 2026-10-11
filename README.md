@@ -2,11 +2,19 @@
 
 Welcome to my **Artificial Intelligence Internship Repository**! 🚀
 
-This repository contains my hands-on learning journey through **Python, Data Analysis, Machine Learning, and real-world data case studies**. It includes daily practice programs, assignments, study materials, Jupyter notebooks, datasets, case studies, and internship projects.
+This repository contains my hands-on learning journey through **Python, Data Analysis, Machine Learning, and practical, dataset-based case studies**. It includes daily practice programs, assignments, study materials, Jupyter notebooks, datasets, case studies, and internship projects.
 
 The goal of this repository is to document my progress from Python fundamentals to practical **Data Science and Machine Learning workflows**.
 
 ---
+
+## 🎓 Internship
+
+**Artificial Intelligence Internship — Glowlogics Solutions**
+
+📅 Duration: May 2026 – August 2026
+
+The internship covered Python programming, data analysis, machine learning, case studies, assignments, and project-based learning.
 
 ## 📌 Repository Overview
 
@@ -350,6 +358,16 @@ Rather than keeping only the final projects, I have documented the learning proc
 > **Practice → Assignments → Experiments → Case Studies → Projects**
 
 This allows the repository to reflect not only the final results, but also the development of my technical skills throughout the internship.
+
+# 📝 Technical Articles
+
+I also documented different stages of my AI internship journey through technical articles:
+
+1. [From print() to Business Insights: What My AI Internship Is Teaching Me](https://medium.com/@varshiniv.dev/from-print-to-business-insights-what-my-ai-internship-is-teaching-me-ceed823aa94c)
+
+2. [From Data Analysis to Machine Learning: When I Started Teaching a Model to Predict](https://medium.com/@varshiniv.dev/from-data-analysis-to-machine-learning-when-i-started-teaching-a-model-to-predict-5dde64712aed)
+
+3. [From Learning Models to Building Projects: My First AI Internship Projects](https://medium.com/@varshiniv.dev/from-learning-models-to-building-projects-my-first-ai-internship-projects-5cc6f3a77b60)
 
 ---
 
